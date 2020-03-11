@@ -22,8 +22,8 @@ let paths = {
     'scss': './app/scss/',
     'css': './app/css/',
     'scripts': './app/js/',
-    'imagesSrc': './app/images/src/',
-    'imagesDest': './app/images/',
+    'imagesSrc': './app/img/src/',
+    'imagesDest': './app/img/',
     'html': './app/html/*.html'
 
 }
@@ -64,11 +64,8 @@ gulp.task('jpegAndPngOptimize', function() {
 });
 gulp.task('makeWebp', function() {
     return gulp.src(paths.imagesSrc + '**/*.{png,jpg,jpeg}')
-    .pipe(cache(webp({
-        quality: 85
-    }),
-    {
-        name: 'webp'
+    .pipe(webp({
+        quality: 80
     }
     ))
     .pipe(gulp.dest(paths.imagesDest));
