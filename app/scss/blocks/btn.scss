@@ -1,0 +1,22 @@
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 54px;
+    padding: 18px 30px 11px 25px;
+    background-color: #d12f22;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 18px;
+    text-decoration: none;
+    border-bottom: 4px solid #ac160a;
+    box-sizing: border-box;
+    &:hover {
+
+        background-color: lighten(#d12f22, 5%);
+        border-bottom: 4px solid lighten(#ac160a, 5%);
+    }
+    &:active {
+        background-color: darken(#d12f22, 5%);
+        border-bottom: 4px solid darken(#ac160a, 5%);
+    }
+}

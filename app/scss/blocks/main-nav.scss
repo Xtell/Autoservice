@@ -1,0 +1,86 @@
+.main-nav .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 920px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-nav__item:last-child .main-nav__link {
+    border-right: none;
+}
+.main-nav__link {
+    display: block;
+    padding: 27px;
+    padding-left: 52px;
+    font-size: 20px;
+    line-height: 22px;
+    background-color: #242424;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-position: 18px 24px;
+    background-repeat: no-repeat;
+    border-right: 1px solid #3a3a3a;
+    &:hover {
+        background-color: #050505;
+        border-right: 1px solid #050505;
+    }
+    &--home {
+        background-image: url("../img/icon-home.png");
+    }
+    &--aboutus {
+        background-image: url("../img/icon-wheel.png");
+        background-position: 18px 26px;
+    }
+    &--price {
+        background-image: url("../img/icon-rub.png");
+        background-position: 27px;
+    }
+    &--works {
+        background-image: url("../img/icon-car-small.png");
+        background-position: 18px 26px;
+    }
+    &--partners {
+        background-image: url("../img/icon-partners.png");
+        background-position: 22px 28px;
+    }
+    &--contacts {
+        background-image: url("../img/icon-map-small.png");
+        background-position: 22px 23px;
+    }
+}
+.main-nav__warranty {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 175px;
+    margin: 0;
+    padding: 8px;
+    border: 3px solid #ffffff;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.main-nav__warranty-year {
+    width: 60px;
+    display: block;
+    font-size: 33px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: left;
+}
+.main-nav__warranty-text {
+    width: 80px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+}

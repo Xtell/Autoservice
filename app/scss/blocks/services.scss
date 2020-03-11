@@ -1,0 +1,121 @@
+.services {
+    margin-bottom: 42px;
+    padding-top: 70px;
+    padding-bottom: 48px;
+    background-color: #191919;
+}
+.services__title {
+    margin-bottom: 65px;
+}
+.services__list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 153px;
+    list-style: none;
+}
+.services__item {
+
+    width: 160px;
+    padding-top: 113px;
+    background-color: #191919;
+    border: 1px solid #353535;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: -1px 12px;
+    cursor: pointer;
+    &:hover {
+        background-color: #2a2a2a;
+    }
+    &--kuzov {
+        background-image: url("../img/kuzov-works.png");
+    }
+    &--mechanic {
+        background-image: url("../img/mech-works.png");
+    }
+    &--express {
+        background-image: url("../img/express.png");
+    }
+    &--diagnostic {
+        background-image: url("../img/diagnostik.png");
+    }
+    &--slesar {
+        background-image: url("../img/repair.png");
+    }
+    &--plastic {
+        background-image: url("../img/plastik.png");
+    }
+    &:hover .services__arrow {
+        background-color: #353535;
+        background-image: url("../img/icon_arrow.png");
+    }
+    &:hover .services__name {
+        text-decoration: underline;
+    }
+
+}
+.services__arrow {
+    display: block;
+    width: 100%;
+    min-height: 25px;
+    text-align: center;
+    background-color: #212121;
+    background-image: url("../img/icon_arrow-red.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.services__name {
+    margin: 0;
+    margin-bottom: 2px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 26px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.services__sublist {
+    position: absolute; 
+    top: 190px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    padding: 20px 30px;
+    list-style: none;
+    background-color: #353535;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: default;
+}
+.services__subitem {
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+    }
+
+}
+.services__request {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.services__request-link {
+    width: 215px;
+}
