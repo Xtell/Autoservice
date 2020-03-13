@@ -1,0 +1,35 @@
+.appeal {
+    padding-top: 34px;
+}
+.appeal__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.appeal__title {
+    width: 548px;
+    margin: 0;
+    font-size: 36px;
+    line-height: 26px;
+}
+.appeal__request {
+    width: 175px;
+}
+.appeal__text {
+    min-height: 263px;
+    margin: 0;
+    padding-left: 380px;
+    padding-right: 50px;
+    font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+    font-weight: bold;
+    line-height: 22px;
+    background-image: url("../img/garage.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 15px;
+}
+.appeal__text span {
+    display: block;
+    margin-bottom: 20px;
+}

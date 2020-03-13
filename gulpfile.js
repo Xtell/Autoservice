@@ -90,7 +90,7 @@ gulp.task('html', function () {
 gulp.task('watch', function(){
     gulp.watch(paths.scss + '**/*', gulp.series('styles'));
     gulp.watch(paths.html, gulp.series('html'));
-    gulp.watch(paths.scripts + '/**/*', gulp.series('scripts'));
+    gulp.watch([paths.scripts + 'libs.js', paths.scripts + 'custom.js'], gulp.series('scripts'));
 });
 
 gulp.task('default', gulp.parallel('images', 'styles', 'scripts', 'html', 'serve', 'watch'));
