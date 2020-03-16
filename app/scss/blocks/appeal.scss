@@ -33,3 +33,11 @@
     display: block;
     margin-bottom: 20px;
 }
+@media (max-width: 1160px) {
+    .appeal__text {
+        padding: 0;
+        padding-top: 280px;
+        background-position: 50% 0;
+    }
+
+}

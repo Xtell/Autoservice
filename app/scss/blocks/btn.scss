@@ -1,8 +1,8 @@
 .btn {
     display: inline-block;
     vertical-align: middle;
-    min-height: 54px;
-    padding: 18px 30px 11px 25px;
+    min-width: 96px;
+    padding: 16px 23px;
     background-color: #d12f22;
     color: #ffffff;
     font-size: 20px;
@@ -20,4 +20,10 @@
         background-color: darken(#d12f22, 5%);
         border-bottom: 4px solid darken(#ac160a, 5%);
     }
+}
+.btn__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 40px;
 }

@@ -1,14 +1,19 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
 img {
     max-width: 100%;
     height: auto;
 }
 body {
-    min-width: 1140px;
+    min-width: 320px;
     font-family: "BebasNeue-Regular", "Arial", sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
     line-height: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
 }
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
@@ -23,7 +28,16 @@ body {
     overflow: hidden;
 }
 .container {
-    position: relative;
-    width: 1110px;
+    max-width: 1140px;
     margin: 0 auto;
+    padding: 0 15px;
+}
+.text--accent {
+    color: #d12f22;
+}
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
 }

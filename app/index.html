@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-    <header class="page-header">
+    <!-- <header class="page-header">
         <div class="page-header__top">
             <div class="page-header__topline">
                 <div class="page-header__wrapper">
@@ -22,8 +22,10 @@
                     </div>
                     <div class="page-header__logo">
                         <picture>
+                            <source media="(max-width: 577px)" srcset="img/logo-mobile.webp" type="image/webp">
+                            <source media="(max-width: 577px)" srcset="img/logo-mobile.png">
                             <source type="image/webp" srcset="img/logo.webp">
-                            <img src="img/logo.png" alt="Логотип компании Автохолл" width="249" height="146">
+                            <img src="img/logo.png" alt="Логотип компании Автохолл" width="249" height="176">
                         </picture>
                     </div>
                     <div class="page-header__callback">
@@ -35,7 +37,7 @@
             </div>
             <div class="page-header__intro intro">
                 <div class="container">
-                    <b class="intro__tagline">Автосервис с безупречной репутацией</b>
+                    <b class=" intro__tagline">Автосервис с безупречной репутацией</b>
                     <div class="intro__buttons">
                         <a href="#" class="btn intro__estimate">Оценить стоимость ремонта по фото</a>
                         <a href="#" class="btn intro__price">Прайс</a>
@@ -46,35 +48,119 @@
         </div>
 
         <nav class="page-header__nav main-nav">
-            <div class="container">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item main-nav__item--active">
-                        <a href="" class="main-nav__link main-nav__link--home">Главная</a>
+            <div class="main-nav__inner">
+                <div class="main-nav__topbar">
+                    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Раскрыть меню</span></button>
+                    <p class="main-nav__warranty">
+                        <span class="main-nav__warranty-year">1 год</span>
+                        <span class="main-nav__warranty-text">Гарантия <br> на все работы</span>
+                    </p>
+                </div>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item main-nav__item--active">
+                            <a href="" class="main-nav__link main-nav__link--home">Главная</a>
+                        </li>
+                        <li class="main-nav__item"
+                        ><a href="" class="main-nav__link main-nav__link--aboutus">О нас</a>
                     </li>
-                    <li class="main-nav__item"
-                    ><a href="" class="main-nav__link main-nav__link--aboutus">О нас</a>
-                </li>
-                    <li class="main-nav__item">
-                        <a href="" class="main-nav__link main-nav__link--price">Цены</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="" class="main-nav__link main-nav__link--works">Наши работы</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="" class="main-nav__link main-nav__link--partners">Партнеры</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="" class="main-nav__link main-nav__link--contacts">Контакты</a>
-                    </li>
-                </ul>
-                <p class="main-nav__warranty">
-                    <span class="main-nav__warranty-year">1 год</span>
-                    <span class="main-nav__warranty-text">Гарантия <br> на все работы</span>
-                </p>
+                        <li class="main-nav__item">
+                            <a href="" class="main-nav__link main-nav__link--price">Цены</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="" class="main-nav__link main-nav__link--works">Наши работы</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="" class="main-nav__link main-nav__link--partners">Партнеры</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="" class="main-nav__link main-nav__link--contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
         </nav>
+    </header> -->
+    <header class="main-page__header page-header">
+        <div class="page-header__top">
+            <div class="page-header__topline">
+                <div class="page-header__topline-inner container">
+                    <p class="page-header__topline-address">
+                        <span class="page-header__address-city text text--accent">
+                            Москва
+                        </span>
+                        <a class="page-header__topline-link page-header__address-street" href="https://yandex.ru/maps/-/CKqFROz1">
+                            ул. верейская, 29 стр.35
+                        </a>
+                    </p>
+                    <div class="page-header__topline-logo">
+                        <picture>
+                            <source media="(max-width: 577px)" srcset="img/logo-mobile.webp" type="image/webp">
+                            <source media="(max-width: 577px)" srcset="img/logo-mobile.png">
+                            <source type="image/webp" srcset="img/logo.webp">
+                            <img src="img/logo.png" alt="Логотип компании Автохолл" width="249" height="176">
+                        </picture>
+                    </div>
+                    <p class="page-header__topline-callback">
+                        <a class="page-header__topline-link page-header__callback-phone" href="tel:+74993917153"><span class="text text--accent">+7 (499) </span>391-71-53</a>
+                        <a class="page-header__topline-link page-header__callback-link" href="#callback">Заказать обратный звонок</a>
+                    </p>
+                </div>
+            </div>
+            <div class="page-header__intro intro">
+                <div class="intro-inner container">
+                    <b class="intro__tagline">Автосервис с безупречной репутацией</b>
+                    <p class="intro__buttons">
+                        <a href="#" class="btn intro__btn-estimate">
+                            <span class="btn__icon">
+                            </span>
+                                Оценить стоимость <br> ремонта по фото
+                        </a>
+                        <a href="#" class="btn intro__btn-price">
+                            Прайс
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="page-header__bottom">
+            <nav class="page-header__nav main-nav">
+                <div class="main-nav__inner container">
+                    <div class="main-nav__topbar">
+                        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Раскрыть меню</span></button>
+                        <p class="main-nav__warranty">
+                            <span class="main-nav__warranty-year">1 год</span>
+                            <span class="main-nav__warranty-text">Гарантия <br> на все работы</span>
+                        </p>
+                    </div>
+
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item main-nav__item--active">
+                            <a href="" class="main-nav__link main-nav__link--home">Главная</a>
+                        </li>
+                        <li class="main-nav__item"
+                        ><a href="" class="main-nav__link main-nav__link--aboutus">О нас</a>
+                    </li>
+                        <li class="main-nav__item">
+                            <a href="" class="main-nav__link main-nav__link--price">Цены</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="" class="main-nav__link main-nav__link--works">Наши работы</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="" class="main-nav__link main-nav__link--partners">Партнеры</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="" class="main-nav__link main-nav__link--contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
     </header>
-    <main class="page-main">
+    <main class="main-page__main page-main">
         <h1 class="visually-hidden">Автохолл - автосервис</h1>
         <section class="page-section services">
             <div class="container">

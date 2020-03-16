@@ -1,4 +1,12 @@
 let servicesItems = document.querySelectorAll(".services__item");
+let mainNavToggle = document.querySelector(".main-nav__toggle");
+let mainNavList = document.querySelector(".main-nav__list");
+
+mainNavToggle.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    mainNavList.classList.toggle("main-nav__list--shown");
+});
+
 function addListener(el) {
     el.addEventListener('click', (evt) => {
         if (el.classList.contains("services__item--shown")) {

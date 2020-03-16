@@ -1,24 +1,55 @@
 
-.intro {
-}
 .intro__tagline {
     display: block;
-    margin-bottom: 378px;
+    margin-bottom: 370px;
     font-size: 40px;
     line-height: 26px;
     color: #ffffff;
     font-weight: normal;
     text-align: center;
+    letter-spacing: 1px;
 }
 .intro__buttons {
-    margin-left: 95px;
+    margin: 0;
+    margin-left: 92px;
 }
-.intro__estimate {
+.intro__btn-estimate {
     width: 240px;
-    margin-right: 23px;
-    padding: 8px 30px 0px 75px;
+    margin-right: 20px;
+    padding: 10px 30px 4px 13px;
     text-align: left;
+
+}
+.intro__btn-estimate .btn__icon {
+    float: left;
+    width: 46px;
+    height: 30px;
+    margin-right: 11px;
     background-image: url("../img/icon-photo.png");
     background-repeat: no-repeat;
-    background-position: 12px 50%;
+}
+@media (max-width: 1160px) {
+    .intro__tagline {
+        margin-bottom: 150px;
+    }
+}
+@media (max-width: 767px) {
+    .intro {
+        padding: 30px 0;
+    }
+    .intro__tagline {
+        font-size: 30px;
+        line-height: initial;
+    }
+    .intro__buttons {
+        width: 100%;
+        margin-left: 0;
+    }
+    .intro__estimate {
+        margin-bottom: 20px;
+    }
+    .intro__estimate,
+    .intro__price {
+        width: 100%;
+    }
 }

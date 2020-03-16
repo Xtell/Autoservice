@@ -1,8 +1,15 @@
-.main-nav .container {
+.main-nav__inner {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+.main-nav__topbar {
+    order: 1;
+}
+.main-nav__toggle {
+    display: none;
 }
 .main-nav__list {
     display: flex;
@@ -18,6 +25,7 @@
 }
 .main-nav__link {
     display: block;
+    margin: 0 -20px;
     padding: 27px;
     padding-left: 52px;
     font-size: 20px;
@@ -26,6 +34,7 @@
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 1px;
     background-position: 18px 24px;
     background-repeat: no-repeat;
     border-right: 1px solid #3a3a3a;
@@ -83,4 +92,75 @@
     line-height: 16px;
     color: #ffffff;
     text-transform: uppercase;
+}
+@media (max-width: 1160px) {
+    .main-nav__toggle {
+        position: relative;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border: none;
+        background-color: transparent;
+        &:active::before,
+        &:active::after {
+            background-color: darken(#ffffff, 20%);
+        }
+        &:active::before {
+            box-shadow: 0px 6px darken(#ffffff, 20%);
+        }
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 20px;
+            height: 3px;
+            background-color: #ffffff;
+        }
+        &::before {
+            top: 2px;
+            box-shadow: 0px 6px #ffffff;
+        }
+        &::after {
+            bottom: 3px;
+        }
+    }
+    .main-nav__topbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        order: initial;
+    }
+    .main-nav__list {
+        display: none;
+        width: 100%;
+        order: 1;
+    }
+    .main-nav__list--shown {
+        display: block;
+    }
+    .main-nav__item {
+        width: 100%;
+    }
+    .main-nav__link {
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        border-right: 0;
+        border-bottom: 1px solid #3a3a3a;
+        background-image: none;
+    }
+
+}
+@media (max-width: 767px) {
+    .main-nav__topbar {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 20px;
+    }
 }
