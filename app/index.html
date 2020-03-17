@@ -7,81 +7,6 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-    <!-- <header class="page-header">
-        <div class="page-header__top">
-            <div class="page-header__topline">
-                <div class="page-header__wrapper">
-                    <div class="page-header__address">
-                        <span class="page-header__city">
-                            Москва
-                        </span>
-                        <span class="page-header__street">
-                            ул. верейская, 29 стр.35
-                        </span>
-
-                    </div>
-                    <div class="page-header__logo">
-                        <picture>
-                            <source media="(max-width: 577px)" srcset="img/logo-mobile.webp" type="image/webp">
-                            <source media="(max-width: 577px)" srcset="img/logo-mobile.png">
-                            <source type="image/webp" srcset="img/logo.webp">
-                            <img src="img/logo.png" alt="Логотип компании Автохолл" width="249" height="176">
-                        </picture>
-                    </div>
-                    <div class="page-header__callback">
-                        <a class="page-header__phone" href="tel:+74993917153"><span>+7 (499) </span>391-71-53</a>
-                        <a class="page-header__callback-link" href="#callback">Заказать обратный звонок</a>
-                    </div>
-                </div>
-    
-            </div>
-            <div class="page-header__intro intro">
-                <div class="container">
-                    <b class=" intro__tagline">Автосервис с безупречной репутацией</b>
-                    <div class="intro__buttons">
-                        <a href="#" class="btn intro__estimate">Оценить стоимость ремонта по фото</a>
-                        <a href="#" class="btn intro__price">Прайс</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <nav class="page-header__nav main-nav">
-            <div class="main-nav__inner">
-                <div class="main-nav__topbar">
-                    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Раскрыть меню</span></button>
-                    <p class="main-nav__warranty">
-                        <span class="main-nav__warranty-year">1 год</span>
-                        <span class="main-nav__warranty-text">Гарантия <br> на все работы</span>
-                    </p>
-                </div>
-                <div class="main-nav__wrapper">
-                    <ul class="main-nav__list">
-                        <li class="main-nav__item main-nav__item--active">
-                            <a href="" class="main-nav__link main-nav__link--home">Главная</a>
-                        </li>
-                        <li class="main-nav__item"
-                        ><a href="" class="main-nav__link main-nav__link--aboutus">О нас</a>
-                    </li>
-                        <li class="main-nav__item">
-                            <a href="" class="main-nav__link main-nav__link--price">Цены</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="" class="main-nav__link main-nav__link--works">Наши работы</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="" class="main-nav__link main-nav__link--partners">Партнеры</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="" class="main-nav__link main-nav__link--contacts">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </nav>
-    </header> -->
     <header class="main-page__header page-header">
         <div class="page-header__top">
             <div class="page-header__topline">
@@ -162,15 +87,16 @@
     </header>
     <main class="main-page__main page-main">
         <h1 class="visually-hidden">Автохолл - автосервис</h1>
-        <section class="page-section services">
-            <div class="container">
+        <section class="main-page__section page-section services">
+            <div class="services__inner container">
                 <h2 class="page-section__title services__title ">
                     Услуги мастерской <span class=page-section__title-brand>Авто<span>Холл</span></span>  
                 </h2>
                 <ul class="services__list">
-                    <li class="services__item services__item--kuzov services__item--shown">
+                    <li class="services__item services__item--kuzov">
                         <h3 class="services__name">Кузовной ремонт</h3>
                         <span class="services__arrow"></span>
+                        <span class="services__sublist-arrow"></span>
                         <ul class="services__sublist">
                             <li class="services__subitem">Стапельные работы</li>
                             <li class="services__subitem">Жестяные работы</li>
@@ -183,11 +109,12 @@
                             <li class="services__subitem">Защитная полировка</li>
                             <li class="services__subitem">Антикоррозийная обработка кузова</li>
                             <li class="services__subitem">Удаление вмятин без покраски</li>
-                        </ul>
+                        </ul>                            
                     </li>
                     <li class="services__item services__item--mechanic">
                         <h3 class="services__name">Механические работы</h3>
                         <span class="services__arrow"></span>
+                        <span class="services__sublist-arrow"></span>
                         <ul class="services__sublist">
                             <li class="services__subitem">Lorem, ipsum.</li>
                             <li class="services__subitem">Lorem, ipsum.</li>
@@ -205,6 +132,7 @@
                     <li class="services__item services__item--express">
                         <h3 class="services__name">Экспресс-услуги</h3>
                         <span class="services__arrow"></span>
+                        <span class="services__sublist-arrow"></span>
                         <ul class="services__sublist">
                             <li class="services__subitem">Lorem ipsum dolor sit.</li>
                             <li class="services__subitem">Lorem ipsum dolor sit.</li>
@@ -222,6 +150,7 @@
                     <li class="services__item services__item--diagnostic">
                         <h3 class="services__name">Диагностика</h3>
                         <span class="services__arrow"></span>
+                        <span class="services__sublist-arrow"></span>
                         <ul class="services__sublist">
                             <li class="services__subitem">Lorem ipsum dolor sit amet.</li>
                             <li class="services__subitem">Lorem ipsum dolor sit amet.</li>
@@ -239,6 +168,7 @@
                     <li class="services__item services__item--slesar">
                         <h3 class="services__name">Слесарные работы</h3>
                         <span class="services__arrow"></span>
+                        <span class="services__sublist-arrow"></span>
                         <ul class="services__sublist">
                             <li class="services__subitem">Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
                             <li class="services__subitem">Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
@@ -256,6 +186,7 @@
                     <li class="services__item services__item--plastic">
                         <h3 class="services__name">Ремонт пластика</h3>
                         <span class="services__arrow"></span>
+                        <span class="services__sublist-arrow"></span>
                         <ul class="services__sublist">
                             <li class="services__subitem">Lorem ipsum dolor s.</li>
                             <li class="services__subitem">Lorem ipsum dolor sit amet.</li>

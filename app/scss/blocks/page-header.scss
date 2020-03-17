@@ -118,6 +118,7 @@
 }
 .page-header__topline-address {
     position: relative;
+    width: 270px;
     margin: 0;
     padding-left: 48px;
     line-height: 26px;
@@ -125,6 +126,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+
 .page-header__address-city {
     display: block;
     font-size: 32px;
@@ -139,8 +141,11 @@
     transform: translateX(-126px);
 }
 .page-header__topline-callback {
+    width: 270px;
     margin: 0;
+    text-align: right;
 }
+
 .page-header__address-city,
 .page-header__callback-phone {
     margin-bottom: 5px;
@@ -158,19 +163,9 @@
         min-height: 450px;
         background-image: url("../img/bg-tablet.jpg");
     }
-    .page-header__wrapper {
-        width: 708px;
-    }
-
 }
 
 @media (max-width: 767px) {
-    .page-header__wrapper {
-        flex-wrap: wrap;
-        align-content: center;
-        width: auto;
-        padding: 10px 20px;
-    }
     .page-header__address {
         width: 140px;
         padding: 0;

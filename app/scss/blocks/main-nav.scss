@@ -25,7 +25,6 @@
 }
 .main-nav__link {
     display: block;
-    margin: 0 -20px;
     padding: 27px;
     padding-left: 52px;
     font-size: 20px;
@@ -148,6 +147,7 @@
     }
     .main-nav__link {
         position: relative;
+        margin: 0 -20px;
         padding-left: 0;
         padding-right: 0;
         text-align: center;
