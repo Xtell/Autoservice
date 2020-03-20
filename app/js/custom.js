@@ -1,26 +1,32 @@
+'use strict'
 document.addEventListener("DOMContentLoaded", function(event) { 
     let servicesItems = document.querySelectorAll(".services__item");
     let mainNavToggle = document.querySelector(".main-nav__toggle");
     let mainNavList = document.querySelector(".main-nav__list");
     
-    mainNavToggle.addEventListener('click', (evt) => {
+    mainNavToggle.addEventListener('click', function (evt) {
         evt.preventDefault();
         mainNavList.classList.toggle("main-nav__list--shown");
     });
     
-    function addListener(el) {
-        el.addEventListener('click', (evt) => {
-            let sublist = el.querySelector(".services__sublist");
+    function addListener(item) {
+        item.addEventListener('click', (evt) => {
+            let sublist = item.querySelector(".services__sublist");
+            console.log(typeof(sublist));
+            // let arrow = item.querySelector('.services__sublist-arrow');
+            // console.log(typeof(arrow));
             let sublistArrow = {
-                element = el.querySelector('.services__sublist-arrow'),
-                width: parseInt(getComputedStyle(this.element).borderLeftWidth),
-                height: parseInt(getComputedStyle(this.element).borderBottomWidth),
-                positionLeft: parseInt(getComputedStyle(this.element).left)
+                arrow: item.querySelector('.services__sublist-arrow'),
+                fd: this.arrow,
+                // width: parseInt(getComputedStyle(this.arrow).borderLeftWidth, 10),
+                // height: parseInt(getComputedStyle(this.arrow).borderBottomWidth, 10),
+                // positionLeft: parseInt(getComputedStyle(this.arrow).left, 10)
             };
+            console.log(sublistArrow.fd);
             // let arrowPosition = parseInt(getComputedStyle(sublist, "::after").left);
             // let arrowWidth = parseInt(getComputedStyle(sublist, "::after").borderLeftWidth);
-            if (el.classList.contains("services__item--shown")) {
-                el.classList.remove("services__item--shown");
+            if (item.classList.contains("services__item--shown")) {
+                item.classList.remove("services__item--shown");
                 closeSublist(sublist);
             }
             else {
@@ -29,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     currentShown.classList.remove("services__item--shown");
                     // closeSublist(sublist);
                 }
-                el.classList.add("services__item--shown");
-                expandSublist(el, sublist, sublistArrow);
+                item.classList.add("services__item--shown");
+                expandSublist(item, sublist, sublistArrow);
             }
         });
     }

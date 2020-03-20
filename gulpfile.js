@@ -45,6 +45,7 @@ gulp.task('styles', function () {
 gulp.task('scripts', function() {
     return gulp.src([
         'node_modules/jquery/dist/jquery.min.js',
+        // 'node_modules/picturefill/dist/picturefill.min.js',
         paths.scripts + 'libs.js',
         paths.scripts + 'custom.js'
     ])

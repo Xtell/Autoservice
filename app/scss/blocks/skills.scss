@@ -1,3 +1,6 @@
+.skills {
+    padding-top: 40px;
+}
 .skills__header {
     margin-bottom: 30px;
 }
@@ -13,9 +16,12 @@
     color: #050505;
     text-align: center;
 }
-.skills__wrapper {
+.skills__inner {
     padding: 40px 0 20px 0;
     background-color: #d6d6d6;
+}
+.skills__wrapper {
+
 }
 .skills__list {
     display: flex;
@@ -44,4 +50,29 @@
     font-size: 14px;
     line-height: 20px;
     text-align: center;
+}
+
+@media (max-width: 767px) {
+    .skills__subtitle {
+        padding: 0 52px;
+    }
+    .skills__list {
+        justify-content: space-around;
+    }
+    .skills__item {
+        width: 260px;
+    }
+    .skills__item img {
+        width: 260px;
+        height: 140px;
+    }
+    .skills__description {
+        font-size: 12px;
+    }
+}
+@media (max-width: 577px) {
+    .skills__subtitle {
+        padding: 0 10px;
+        font-size: 12px;
+    }
 }
