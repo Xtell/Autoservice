@@ -223,8 +223,8 @@
                     <ul class="skills__list">
                         <li class="skills__item">
                             <picture>
-                                <source srcset="../img/antikor.webp" type="image/webp">
-                                <img src="../img/antikor.jpg" alt="Антикоррозийная обработка" class="skills__image" width="350" height="230">
+                                <source srcset="img/antikor.webp" type="image/webp">
+                                <img src="img/antikor.jpg" alt="Антикоррозийная обработка" class="skills__image" width="350" height="230">
                             </picture>
 
                             <p class="skills__description">
@@ -233,8 +233,8 @@
                         </li>
                         <li class="skills__item">
                             <picture>
-                                <source srcset="../img/abrasive.webp" type="image/webp">
-                                <img src="../img/abrasive.jpg" alt="Абразивная полировка" class="skills__image" width="350" height="230">
+                                <source srcset="img/abrasive.webp" type="image/webp">
+                                <img src="img/abrasive.jpg" alt="Абразивная полировка" class="skills__image" width="350" height="230">
                             </picture>
                             <p class="skills__description">
                                 Автомобиль современного делового человека должен иметь презентабельный вид. Многие наши клиенты, бросив критический взгляд на свою машину, понимают, что ей необходима абразивная полировка кузова. Она применяется в тех случаях, когда на поверхности автомобиля изобилуют дефекты.
@@ -242,8 +242,8 @@
                         </li>
                         <li class="skills__item">
                             <picture>
-                                <source srcset="../img/local-repair.webp" type="image/webp">
-                                <img src="../img/local-repair.jpg" alt="Локальный ремонт бамперов" class="skills__image" width="350" height="230">
+                                <source srcset="img/local-repair.webp" type="image/webp">
+                                <img src="img/local-repair.jpg" alt="Локальный ремонт бамперов" class="skills__image" width="350" height="230">
                             </picture>
                             <p class="skills__description">
                                 Одной из самых востребованных нашими клиентами услуг является локальный ремонт бамперов прочего пластика. В наши дни, как и ранее, бамперы защищают автомобили в ходе столкновения. Бампера современных автомобилей изготовлены из пластика, стоят дорого и являются достаточно ломкими.
@@ -251,8 +251,8 @@
                         </li>
                         <li class="skills__item">
                             <picture>
-                                <source srcset="../img/kuzov.webp" type="image/webp">
-                                <img src="../img/kuzov.jpg" alt="Ремонт кузова" class="skills__image" width="350" height="230">
+                                <source srcset="img/kuzov.webp" type="image/webp">
+                                <img src="img/kuzov.jpg" alt="Ремонт кузова" class="skills__image" width="350" height="230">
                             </picture>
                             <p class="skills__description">
                                 Наши специалисты способны привести в идеальное состояние приобретенный подержанный автомобиль либо машину, которая недавно побывала в «автопеределке».
@@ -260,8 +260,8 @@
                         </li>
                         <li class="skills__item">
                             <picture>
-                                <source srcset="../img/maxres.webp" type="image/webp">
-                                <img src="../img/maxres.jpg" alt="Максимальный результат" class="skills__image" width="350" height="230">
+                                <source srcset="img/maxres.webp" type="image/webp">
+                                <img src="img/maxres.jpg" alt="Максимальный результат" class="skills__image" width="350" height="230">
                             </picture>
                             <p class="skills__description">
                                 Для владельцев автомашин марки Mercedes, BMW, Mini, Ford, Volkswagen, Mazda, Hyundai, нуждающихся в том, чтобы осуществить кузовной ремонт на самом высоком уровне либо покраску автомобиля, гостеприимно распахивает свои двери сервис «Автохолл».
@@ -269,8 +269,8 @@
                         </li>
                         <li class="skills__item">
                             <picture>
-                                <source srcset="../img/works.webp" type="image/webp">
-                                <img src="../img/works.jpg" alt="Стапельные работы" class="skills__image" width="350" height="230">
+                                <source srcset="img/works.webp" type="image/webp">
+                                <img src="img/works.jpg" alt="Стапельные работы" class="skills__image" width="350" height="230">
                             </picture>
                             <p class="skills__description">
                                 Порой, даже с очень внимательным и аккуратным водителем, имеющим большой стаж, случается серьезная авария, которая приводит автомобиль к серьезной деформации кузова. В этом случае нами могут быть выполнены стапельные работы.
@@ -288,8 +288,13 @@
                 </header>
                 <div class="appeal__wrapper">
                     <div class="appeal__image">
-                        <picture></picture>
-                        <img src="../img/garage.jpg" alt="Все виды работ по ремонту">
+                        <picture>
+                            <source media="(max-width: 767px )" srcset="img/garage-mobile.webp" type="image/webp">
+                            <source media="(max-width: 767px)" srcset="img/garage-mobile.jpg">
+                            <source srcset="img/garage.webp" type="image/webp">
+                            <img src="../img/garage.jpg" alt="Все виды работ по ремонту">
+                        </picture>
+
                     </div>
                     <p class="appeal__text">
                         <span>
@@ -325,9 +330,7 @@
                     <img src="https://via.placeholder.com/88x31" alt="Аналитика" width="88" height="31">
                 </p>
             </div>
-
         </div>
-
     </footer>
     <script src="js/script.min.js"></script>
 </body>
