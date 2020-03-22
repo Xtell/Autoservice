@@ -1,9 +1,9 @@
 .footer-nav__list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 300px;
+    width: 665px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -16,7 +16,6 @@
 }
 
 .footer-nav__link {
-
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: underline;
@@ -25,7 +24,11 @@
     }
 }
 @media (max-width: 1160px) {
-    .footer-nav__link {
-        font-size: 16px;
+    .footer-nav__list {
+        width: 200px;
+        flex-direction: column;
+    }
+    .footer-nav__item {
+        margin-bottom: 5px;
     }
 }
