@@ -21,25 +21,79 @@
         display: none;
     }
 }
-
+.appeal__wrapper {
+    min-height: 263px;
+}
+.appeal__image {
+    position: relative;
+    top: 15px;
+    float: left;
+    margin-right: 20px;
+}
+.appeal__image img {
+    width: 349px;
+    height: 248px;
+}
 
 .appeal__text {
-    min-height: 263px;
+
     margin: 0;
-    padding-left: 380px;
-    padding-right: 50px;
+    padding-right: 65px;
     font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
     font-weight: bold;
     line-height: 22px;
     text-transform: none;
-    background-image: url("../img/garage.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 15px;
+    // background-image: url("../img/garage.jpg");
+    // background-repeat: no-repeat;
+    // background-position: 0 15px;
 }
 .appeal__text span {
     display: block;
     margin-bottom: 20px;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 @media (max-width: 1160px) {
+    .appeal__text {
+        padding-right: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .appeal__title {
+        width: 350px;
+        font-size: 26px;
+    }
+    .appeal__image {
+        position: static;
+    }
+    .appeal__image img {
+        width: 248px;
+        height: 176px;
+    }
+    .appeal__text {
+        padding-right: 0;
+    }
 
+}
+@media (max-width: 577px ) {
+    .appeal {
+        padding-bottom: 25px;
+    }
+    .appeal__image {
+        position: static;
+        float: none;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .appeal__text {
+        margin-bottom: 20px;
+    }
+    .appeal__request--top {
+        display: none;
+    }
+    .appeal__request--bottom {
+        display: block;
+        width: 100%;
+    }
 }

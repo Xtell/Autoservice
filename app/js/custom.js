@@ -10,19 +10,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
     
     function addListener(item) {
-        item.addEventListener('click', (evt) => {
+        item.addEventListener('click', function(evt) {
             let sublist = item.querySelector(".services__sublist");
             console.log(typeof(sublist));
             // let arrow = item.querySelector('.services__sublist-arrow');
             // console.log(typeof(arrow));
-            let sublistArrow = {
-                arrow: item.querySelector('.services__sublist-arrow'),
-                fd: this.arrow,
-                // width: parseInt(getComputedStyle(this.arrow).borderLeftWidth, 10),
-                // height: parseInt(getComputedStyle(this.arrow).borderBottomWidth, 10),
-                // positionLeft: parseInt(getComputedStyle(this.arrow).left, 10)
+            let sublistArrow = item.querySelector('.services__sublist-arrow')
+            let sublistArrowProperties = {
+                width: parseInt(getComputedStyle(sublistArrow).borderLeftWidth, 10),
+                height: parseInt(getComputedStyle(sublistArrow).borderBottomWidth, 10),
+                positionLeft: parseInt(getComputedStyle(sublistArrow).left, 10)
             };
-            console.log(sublistArrow.fd);
+
             // let arrowPosition = parseInt(getComputedStyle(sublist, "::after").left);
             // let arrowWidth = parseInt(getComputedStyle(sublist, "::after").borderLeftWidth);
             if (item.classList.contains("services__item--shown")) {
@@ -36,24 +35,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     // closeSublist(sublist);
                 }
                 item.classList.add("services__item--shown");
-                expandSublist(item, sublist, sublistArrow);
+                expandSublist(item, sublist, sublistArrow, sublistArrowProperties);
             }
         });
     }
-    function expandSublist(item, sublist, sublistArrow) {
+    function expandSublist(item, sublist, sublistArrow, sublistArrowProperties) {
         // Item
         let itemOffsetTop = item.offsetTop;
         let itemOffsetLeft = item.offsetLeft;
         let itemWidth = item.offsetWidth;
         let itemHeight = item.offsetHeight;
-        //Sublist arrow
+
         let sublistCurrentPositionTop = parseInt(getComputedStyle(sublist).top, 10);
         let sublistNewPositionTop = itemOffsetTop + itemHeight + 20;
-        let sublistArrowPositionTop = sublistNewPositionTop - sublistArrow.height;
-        let sublistArrowPositionLeft = Math.floor(itemWidth / 2) + itemOffsetLeft - sublistArrow.width;
+        let sublistArrowPositionTop = sublistNewPositionTop - sublistArrowProperties.height;
+        let sublistArrowPositionLeft = Math.floor(itemWidth / 2) + itemOffsetLeft - sublistArrowProperties.width;
+
         sublist.style.top = String(sublistNewPositionTop) + "px";
-        sublistArrow.element.style.top = String(sublistArrowPositionTop) + "px";
-        sublistArrow.element.style.left = String(sublistArrowPositionLeft) + "px";
+        sublistArrow.style.top = String(sublistArrowPositionTop) + "px";
+        sublistArrow.style.left = String(sublistArrowPositionLeft) + "px";
     }
     function closeSublist(sublist) {
         sublist.style.top = "";
