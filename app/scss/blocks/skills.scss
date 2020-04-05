@@ -60,11 +60,11 @@
         justify-content: space-around;
     }
     .skills__item {
-        width: 260px;
+        width: 263px;
     }
     .skills__item img {
-        width: 260px;
-        height: 140px;
+        width: 263px;
+        height: 176px;
     }
     .skills__description {
         font-size: 12px;
@@ -74,5 +74,8 @@
     .skills__subtitle {
         padding: 0 10px;
         font-size: 12px;
+    }
+    .skills__item {
+        margin-right: 10px;
     }
 }

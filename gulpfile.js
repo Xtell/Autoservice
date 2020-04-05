@@ -95,4 +95,4 @@ gulp.task('watch', function(){
     gulp.watch([paths.scripts + 'libs.js', paths.scripts + 'custom.js'], gulp.series('scripts'));
 });
 
-gulp.task('default', gulp.parallel('images', 'styles', 'scripts', 'html', 'serve', 'watch'));
+gulp.task('default', gulp.parallel('styles', 'scripts', 'html', 'serve', 'watch'));

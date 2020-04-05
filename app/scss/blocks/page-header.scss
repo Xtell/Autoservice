@@ -103,7 +103,11 @@
 @media (max-width: 577px ) {
     .page-header__topline {
         min-height: 110px;
-
+    }
+    .page-header__top {
+        min-height: 460px;
+        background-image: none;
+        background-color: #242424;
     }
     .page-header__topline-address {
         width: 100%;

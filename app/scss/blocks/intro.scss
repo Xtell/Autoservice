@@ -59,6 +59,8 @@
 }
 @media (max-width: 577px) {
     .intro {
+        min-height: 290px;
+        height: 290px;
         padding-top: 25px;
     }
     .intro__buttons {
