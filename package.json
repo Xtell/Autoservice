@@ -29,7 +29,7 @@
     "gulp-ttf2woff2": "^3.0.0",
     "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.21",
     "lodash.template": "^4.5.0",
     "normalize.scss": "^0.1.0",
